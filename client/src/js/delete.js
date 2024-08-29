@@ -36,7 +36,3 @@ All data has been removed! 📓💨
   });
 };
 
-// Example deleteDb function (implement this based on your setup)
-async function deleteDb() {
-  console.log("Database content deleted.");
-}

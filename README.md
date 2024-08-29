@@ -19,10 +19,10 @@
 
   <p align="center">
    Text Editor X Application  <br />
-    <a href="https://"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Reina2024/pwa-text-editor"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://.onrender.com/">View App</a>
+    <a href="https://pwa-text-editor-u42a.onrender.com">View App</a>
   </p>
 </div>
 
@@ -54,9 +54,16 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-<!-- Add screenshots using the following format: -->
-<!-- ![Screenshot alt description](directPathOfScreenshots) -->
+Here are some screenshots of the project:
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.29.05 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.29.28 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.29.46 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.30.46 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.31.11 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.31.22 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.31.32 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.31.53 PM.png)
+![alt text](./client/src/images/Screenshot%202024-08-28%20at%2010.32.12 PM.png)
 
 This project was built using Webpack, Babel, and CodeMirror to create a progressive web app text editor themed around cats
 
@@ -82,22 +89,18 @@ This project was built using Webpack, Babel, and CodeMirror to create a progress
 ## Getting Started
 
 This app is fully functional and live at:
-https://.onrender.com/
+https://pwa-text-editor-u42a.onrender.com
 
 If you would like to run the app locally, follow the below installation instructions
 
 ### Installation
 
 1. Clone the repo
-   git clone https:/
+   git clone https://github.com/Reina2024/pwa-text-editor
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
-
-Please enjoy this video of the application being used
-
-(in development)
 
 To run in the app locally, simply run `npm i` to install all the dependencies.
 
@@ -153,8 +156,8 @@ See LICENSE.txt for more information.
 
 Reina Simms - simmsreina@gmail.com
 
-Repo Link: [https://github.com/](https://github.)
-Live Link: [https://.onrender.com/](https:/.onrender.com/)
+Repo Link: [https://github.com/Reina2024/pwa-text-editor](https://github.com/Reina2024/pwa-text-editor)
+Live Link: [https://pwa-text-editor-u42a.onrender.com](https://pwa-text-editor-u42a.onrender.com)
 
 <!-- ACKNOWLEDGMENTS -->
 

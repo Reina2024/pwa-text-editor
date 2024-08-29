@@ -151,7 +151,7 @@ See LICENSE.txt for more information.
 
 ## Contact
 
-Mary Elenius - mary.panda.jackson@gmail.com
+Reina Simms - simmsreina@gmail.com
 
 Repo Link: [https://github.com/](https://github.)
 Live Link: [https://pwa-kitties.onrender.com/](https:/.onrender.com/)
@@ -160,4 +160,4 @@ Live Link: [https://pwa-kitties.onrender.com/](https:/.onrender.com/)
 
 ## Acknowledgments
 
-
+Thank to Mary Elenius and the staff for helping me. Thank you to the students in the FSF course for thier help!

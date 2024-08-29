@@ -15,7 +15,7 @@ export class Editor {
       value: "",
       mode: "javascript",
       
-      theme: "solarized light",
+      theme: "solarized",
       lineNumbers: true,
       lineWrapping: true,
       autofocus: true,

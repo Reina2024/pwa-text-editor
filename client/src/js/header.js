@@ -1,3 +1,4 @@
+// Define a string variable 'header' containing a multi-line ASCII art comment
 const header = `
 /*
 ____________________________________________
@@ -42,4 +43,5 @@ Crafted for clarity and efficiency!
 */                          
 `;
 
+// Export the 'header' variable to make it available for other modules
 export { header };

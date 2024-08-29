@@ -1,203 +1,238 @@
-/* app shell CSS */
+/* Define root variables for consistent color and layout values */
 :root {
-  --primary: #31a9e1;
-  --gray: #ececec;
-  --whitesmoke: #f5f5f5;
-  --dark: #222;
-  --duotone-light: #272822;
-  --navbar-height: max-content;
+  --primary: #31a9e1; /* Primary color for the app */
+  --gray: #ececec; /* Light gray color */
+  --whitesmoke: #f5f5f5; /* Slightly off-white color */
+  --dark: #222; /* Dark color for text */
+  --duotone-light: #272822; /* Custom light duotone color */
+  --navbar-height: max-content; /* Height of the navbar, adjusts based on content */
 }
 
+/* Basic styles for the body element */
 body {
-  margin: 0;
-  background-color: var(--solarize);
+  margin: 0; /* Remove default margin */
+  background-color: var(--solarize); /* Set background color */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; /* Use a stack of system and web-safe fonts */
 }
 
+/* Style for <h1> elements */
 h1 {
-  font-size: 22px;
+  font-size: 22px; /* Set font size for headings */
 }
 
+/* Styles for CodeMirror editor */
 .CodeMirror-wrap {
-  height: 100vh !important;
+  height: 100vh !important; /* Ensure editor takes full viewport height */
 }
 
+/* Style for the navbar */
 #navbar {
-  height: var(--navbar-height);
-  background-color: var(--primary);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  font-size: 22px;
-  font-weight: 550;
-  letter-spacing: 0.9px;
-  text-align: center;
+  height: var(--navbar-height); /* Use variable for navbar height */
+  background-color: var(--primary); /* Set background color to primary */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out items horizontally */
+  color: white; /* Set text color to white */
+  font-size: 22px; /* Set font size */
+  font-weight: 550; /* Set font weight */
+  letter-spacing: 0.9px; /* Add slight letter spacing */
+  text-align: center; /* Center text alignment */
 }
 
+/* Style for images inside the navbar-brand */
 .navbar-brand img {
-  padding-top: 10px;
+  padding-top: 10px; /* Add padding to the top of the image */
 }
 
+/* Styles for loading spinner */
 .loading-spinner {
-  animation-duration: 0.75s;
-  animation-iteration-count: infinite;
-  animation-name: rotate-forever;
-  animation-timing-function: linear;
-  height: 30px;
-  width: 30px;
-  border: 3px solid var(--primary);
-  border-right-color: transparent;
-  border-radius: 50%;
+  animation-duration: 0.75s; /* Duration of spin animation */
+  animation-iteration-count: infinite; /* Make spinner spin forever */
+  animation-name: rotate-forever; /* Use the defined keyframe animation */
+  animation-timing-function: linear; /* Linear timing for smooth spinning */
+  height: 30px; /* Set height of spinner */
+  width: 30px; /* Set width of spinner */
+  border: 3px solid var(--primary); /* Border color and size */
+  border-right-color: transparent; /* Make the right border transparent */
+  border-radius: 50%; /* Make spinner circular */
 }
 
+/* Center spinner vertically and horizontally */
 .loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - var(--navbar-height));
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: calc(100vh - var(--navbar-height)); /* Full height minus navbar height */
 }
 
+/* Keyframe animation for spinning effect */
 @keyframes rotate-forever {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Rotate to 360 degrees */
   }
 }
 
+/* Styles for app update notification */
 .app-update {
-  display: none;
-  position: absolute;
-  right: 10px;
+  display: none; /* Hide by default */
+  position: absolute; /* Position absolutely */
+  right: 10px; /* Align to the right with 10px spacing */
 }
 
+/* Show app update notification when it has the 'show' class */
 .app-update.show {
-  display: block;
+  display: block; /* Display the notification */
 }
 
+/* Styles for navigation buttons in the navbar */
 .nav-btn {
-  margin: 25px;
+  margin: 25px; /* Add margin around buttons */
 }
 
+/* Base button styles */
 .btn {
-  text-align: center;
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  margin: 0;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 0.3rem;
-  border: 1px solid transparent;
-  outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  text-align: center; /* Center text inside button */
+  display: inline-block; /* Make buttons inline-block */
+  padding: 0.5rem 1.2rem; /* Add padding */
+  margin: 0; /* Remove default margin */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Set font size */
+  border-radius: 0.3rem; /* Round button corners slightly */
+  border: 1px solid transparent; /* Add border, but transparent */
+  outline: none; /* Remove default outline */
+  color: #1a1a1a; /* Text color */
+  background-color: #aeaeae; /* Background color */
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transitions for color and background */
 }
 
+/* Hover effect for buttons */
 .btn:hover {
-  background-color: #cecece;
-  cursor: pointer;
+  background-color: #cecece; /* Change background on hover */
+  cursor: pointer; /* Change cursor to pointer */
 }
 
+/* Square button style */
 .btn.btn-squared {
-  border-radius: 0;
+  border-radius: 0; /* Remove rounded corners */
 }
 
+/* Small button style */
 .btn.btn-sm {
-  font-size: 0.85rem;
-  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem; /* Smaller font size */
+  padding: 0.3rem 0.9rem; /* Smaller padding */
 }
 
+/* Large button style */
 .btn.btn-lg {
-  font-size: 1.25rem;
-  padding: 0.8rem 1.4rem;
+  font-size: 1.25rem; /* Larger font size */
+  padding: 0.8rem 1.4rem; /* Larger padding */
 }
 
+/* Full-width button style */
 .btn.btn-block {
-  width: 100%;
-  display: block;
-  text-align: center;
+  width: 100%; /* Make button take full width */
+  display: block; /* Display as block */
+  text-align: center; /* Center text */
 }
 
+/* Primary button styles */
 .btn.btn-primary {
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #2d3e50; /* Background color */
+  color: #d9e9e8; /* Text color */
 }
 
+/* Hover effect for primary button */
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #57779a; /* Change background on hover */
 }
 
+/* Danger button styles */
 .btn.btn-danger {
-  background-color: #e64c66;
-  color: #ffffff;
+  background-color: #e64c66; /* Background color */
+  color: #ffffff; /* Text color */
 }
 
+/* Hover effect for danger button */
 .btn.btn-danger:hover {
-  background-color: #ee8294;
+  background-color: #ee8294; /* Change background on hover */
 }
 
+/* Info button styles */
 .btn.btn-info {
-  background-color: #1bbc9b;
-  color: #ffffff;
+  background-color: #1bbc9b; /* Background color */
+  color: #ffffff; /* Text color */
 }
 
+/* Hover effect for info button */
 .btn.btn-info:hover {
-  background-color: #31e1bd;
+  background-color: #31e1bd; /* Change background on hover */
 }
 
+/* Light button styles */
 .btn.btn-light {
-  background-color: #d9e9e8;
-  color: #1a1a1a;
+  background-color: #d9e9e8; /* Background color */
+  color: #1a1a1a; /* Text color */
 }
 
+/* Hover effect for light button */
 .btn.btn-light:hover {
-  background-color: #84b8b4;
+  background-color: #84b8b4; /* Change background on hover */
 }
 
+/* Dark button styles */
 .btn.btn-dark {
-  background-color: #1a1a1a;
-  color: #d9e9e8;
+  background-color: #1a1a1a; /* Background color */
+  color: #d9e9e8; /* Text color */
 }
 
+/* Hover effect for dark button */
 .btn.btn-dark:hover {
-  background-color: #5f5f5f;
+  background-color: #5f5f5f; /* Change background on hover */
 }
 
+/* White button styles */
 .btn.btn-white {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: #ffffff; /* Background color */
+  color: #1a1a1a; /* Text color */
 }
 
+/* Hover effect for white button */
 .btn.btn-white:hover {
-  background-color: #cccccc;
+  background-color: #cccccc; /* Change background on hover */
 }
 
+/* Black button styles */
 .btn.btn-black {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000000; /* Background color */
+  color: #ffffff; /* Text color */
 }
 
+/* Hover effect for black button */
 .btn.btn-black:hover {
-  background-color: #666666;
+  background-color: #666666; /* Change background on hover */
 }
 
+/* Link button styles */
 .btn.btn-link {
-  background-color: #1b89bc;
-  color: #ffffff;
+  background-color: #1b89bc; /* Background color */
+  color: #ffffff; /* Text color */
 }
 
+/* Hover effect for link button */
 .btn.btn-link:hover {
-  background-color: #31a9e1;
+  background-color: #31a9e1; /* Change background on hover */
 }
 
+/* Media query for small screens (max-width: 600px) */
 @media only screen and (max-width: 600px) {
+  /* Hide navigation buttons and brand on small screens */
   .nav-btn {
     display: none;
   }
@@ -206,10 +241,12 @@ h1 {
     display: none;
   }
 
+  /* Center the navbar content on small screens */
   #navbar {
     justify-content: center;
   }
 
+  /* Reduce heading font size on small screens */
   h1 {
     font-size: 18px;
   }

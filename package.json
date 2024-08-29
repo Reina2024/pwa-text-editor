@@ -1,5 +1,5 @@
 {
-  "name": "TEXA",
+  "name":"texa",
   "version": "1.0.0",
   "description": "Text editor application converted to PWA",
   "main": "server.js",
@@ -12,16 +12,16 @@
     "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Reina Simms",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Reina2024/pwa-text-editor"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Reina2024/pwa-text-editor/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/Reina2024/pwa-text-editor",
   "dependencies": {
     "express": "^4.17.1"
   },

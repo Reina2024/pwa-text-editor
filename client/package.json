@@ -1,5 +1,5 @@
 {
-  "name": "TEXA",
+  "name": "texa",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",

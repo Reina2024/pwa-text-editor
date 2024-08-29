@@ -1,5 +1,5 @@
 {
-  "name": "TEXA",
+  "name": "texa",
   "version": "1.0.0",
   "description": "Text editor application converted to PWA",
   "main": "server.js",

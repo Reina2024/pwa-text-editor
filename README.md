@@ -154,7 +154,7 @@ See LICENSE.txt for more information.
 Reina Simms - simmsreina@gmail.com
 
 Repo Link: [https://github.com/](https://github.)
-Live Link: [https://pwa-kitties.onrender.com/](https:/.onrender.com/)
+Live Link: [https://.onrender.com/](https:/.onrender.com/)
 
 <!-- ACKNOWLEDGMENTS -->
 
